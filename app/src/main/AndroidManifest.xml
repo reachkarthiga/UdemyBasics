@@ -2,27 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.example.udemybasics">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Music Player"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Calculator">
+        <activity android:name=".Grids" />
+
+        <activity android:name=".MusicPlayer"/>
+        <activity android:name=".VideoPlayer"
+                  android:configChanges="orientation|screenLayout|screenSize"/>
+        <activity android:name=".TicTacToePlyr"
+                  android:screenOrientation="portrait" />
+        <activity android:name=".TicTacToe" />
+        <activity android:name=".ImageAnimate" />
+        <activity android:name=".SquareTriangular" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UsridPwdImg">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
+        <activity android:name=".RandomNum" />
+        <activity android:name=".Calculator"
+                  android:screenOrientation="portrait" />
+        <activity android:name=".UsridPwdImg" />
     </application>
 
 </manifest>

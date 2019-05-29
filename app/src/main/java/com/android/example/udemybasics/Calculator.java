@@ -200,6 +200,15 @@ public class Calculator extends AppCompatActivity {
 
         TextView input = (TextView) findViewById(R.id.inp);
         usrInput = input.getText().toString();
+
+        if (usrInput.length() == 0){
+            return;
+        }
+
+        if (oprndne == false && numdne == true){
+            usrInput = usrInput.substring(0,usrInput.length()-1);
+        }
+
         input.setText(usrInput + "/");
         oprn = "/";
         numdne = true;
@@ -216,6 +225,15 @@ public class Calculator extends AppCompatActivity {
 
         TextView input = (TextView) findViewById(R.id.inp);
         usrInput = input.getText().toString();
+
+        if (usrInput.length() == 0){
+            return;
+        }
+
+        if (oprndne == false && numdne == true){
+            usrInput = usrInput.substring(0,usrInput.length()-1);
+        }
+
         input.setText(usrInput + "*");
         oprn = "*";
         numdne = true;
@@ -231,6 +249,15 @@ public class Calculator extends AppCompatActivity {
 
         TextView input = (TextView) findViewById(R.id.inp);
         usrInput = input.getText().toString();
+
+        if (usrInput.length() == 0){
+            return;
+        }
+
+        if (oprndne == false && numdne == true){
+            usrInput = usrInput.substring(0,usrInput.length()-1);
+        }
+
         input.setText(usrInput + "-");
         oprn = "-";
         numdne = true;
@@ -247,6 +274,15 @@ public class Calculator extends AppCompatActivity {
 
         TextView input = (TextView) findViewById(R.id.inp);
         usrInput = input.getText().toString();
+
+        if (usrInput.length() == 0){
+            return;
+        }
+
+        if (oprndne == false && numdne == true){
+            usrInput = usrInput.substring(0,usrInput.length()-1);
+        }
+
         input.setText(usrInput + "+");
         oprn = "+";
         numdne = true;
